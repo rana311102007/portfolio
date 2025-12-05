@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhruv Rana – Future AI Engineer</title>
+<style>
+/* ==== Body & Fonts ==== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background: linear-gradient(60deg, #040231 50%, #f0f0f0 50%);
+  color: #e6e6e6;
+  transition: background 0.8s, color 0.8s;
+}
+
+/* ==== Header ==== */
+header {
+  background: linear-gradient(135deg, #111, #222);
+  color: #c1f409;
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 1px solid #357508eb;
+  transition: background 0.8s;
+}
+header h1 {
+  font-size: 3em;
+  letter-spacing: 2px;
+  animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #00e0ff; }
+  100% { text-shadow: 0 0 25px #00fff2; }
+}
+
+/* Typing line container */
+.typing-container {
+  margin-top: 30px; /* space below header title */
+}
+.typing {
+  font-size: 1.3em;
+  color: #00fff2;
+  border-right: 3px solid #00e0ff;
+  width: fit-content;
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(30,end), blink .7s infinite;
+}
+@keyframes typing { from { width:0; } to { width:100%; } }
+@keyframes blink { 50% { border-color: transparent; } }
+
+/* ==== Sections ==== */
+section {
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 50px auto;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  border-radius: 12px;
+  box-shadow: 0 0 25px #00e0ff22;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+h2 {
+  color: #00e0ff;
+  border-left: 4px solid #00e0ff;
+  padding-left: 12px;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+ul li {
+  background: #1c1c1c;
+  color: #f0f0f0;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #00e0ff33;
+  transition: 0.3s;
+}
+ul li:hover {
+  background: #131313;
+  transform: scale(1.02);
+  border-color: #00e0ff;
+}
+
+/* ==== Contact Icons ==== */
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  background: linear-gradient(135deg, #111, #222);
+  border-radius: 12px;
+  border: 1px solid #00e0ff44;
+  box-shadow: 0 0 20px #00e0ff22;
+  transition: all 0.4s;
+}
+.contact-box a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  transition: 0.3s;
+}
+.contact-box a img {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 5px #00e0ff);
+  transition: transform 0.3s, filter 0.3s;
+}
+.contact-box a:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 15px #00fff2);
+}
+
+/* ==== Footer ==== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a0a0a;
+  color: #00e0ff;
+  border-top: 1px solid #00e0ff33;
+}
+
+/* ==== Particles ==== */
+#particles {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+</style>
+</head>
+<body>
+
+<canvas id="particles"></canvas>
+
+<header>
+  <h1>Dhruv Rana – Future AI Engineer</h1>
+  <div class="typing-container">
+    <div class="typing">Future AI Engineer | ML Enthusiast | Tech Learner</div>
+  </div>
+</header>
+
+<section class="reveal">
+  <h2>About Me</h2>
+  <p>Hi, I’m <b>Dhruv Rana</b>, a 17-year-old aspiring <b>AI Engineer</b>. I have just completed 12th and will join BCA next year. I am building a strong base in coding and want to work in Artificial Intelligence — Neural Networks, Machine Learning, and future AI technologies. This portfolio will grow with my learning journey.</p>
+</section>
+
+<section class="reveal">
+  <h2>AI Engineer Roadmap</h2>
+  <ul>
+    <li><b>Step 1:</b> Python, Logic Building</li>
+    <li><b>Step 2:</b> Statistics, Probability, Linear Algebra</li>
+    <li><b>Step 3:</b> ML Algorithms, Training Models</li>
+    <li><b>Step 4:</b> Deep Learning (CNN, RNN, Transformers)</li>
+    <li><b>Step 5:</b> Tools – NumPy, Pandas, Scikit-Learn, TensorFlow/PyTorch</li>
+    <li><b>Step 6:</b> AI Projects – Classifiers, Chatbots, Image Recognition</li>
+    <li><b>Step 7:</b> Career Prep – GitHub, Resume, LinkedIn, Internships</li>
+  </ul>
+</section>
+
+<section class="reveal">
+  <h2>Skills</h2>
+  <ul>
+    <li>Python (Learning)</li>
+    <li>HTML, CSS (Beginner)</li>
+    <li>Machine Learning Basics (Upcoming)</li>
+    <li>Deep Learning (Future Learning)</li>
+    <li>AI Model Deployment (Future Goal)</li>
+  </ul>
+</section>
+
+<section class="reveal">
+  <h2>AI Projects</h2>
+  <ul>
+    <li>AI Styled Portfolio Website ✔️</li>
+    <li>Spam SMS Classifier (Upcoming)</li>
+    <li>Handwritten Digit Recognition (Future)</li>
+    <li>Simple Chatbot Model (Future)</li>
+    <li>Face Recognition (Future)</li>
+  </ul>
+</section>
+
+<section class="reveal" id="contact">
+  <div class="contact-box">
+    <a href="mailto:ranadhruv411@gmail.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+    </a>
+    <a href="https://wa.me/919877928734" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+    <a href="https://github.com/rana311102007" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+    </a>
+    <a href="https://instagram.com/ranadhruvv" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+  </div>
+</section>
+
+<footer>
+  © 2025 Dhruv Rana | Future AI Engineer Portfolio
+</footer>
+
+<script>
+// ==== Particles ====
+const canvas = document.getElementById("particles");
+const ctx = canvas.getContext("2d");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const particles = [];
+for(let i=0;i<70;i++){
+  particles.push({
+    x: Math.random()*canvas.width,
+    y: Math.random()*canvas.height,
+    r: Math.random()*2+1,
+    dx: (Math.random()-0.5)*0.5,
+    dy: (Math.random()-0.5)*0.5
+  });
+}
+
+function animateParticles(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  particles.forEach(p=>{
+    ctx.beginPath();
+    ctx.arc(p.x,p.y,p.r,0,Math.PI*2);
+    ctx.fillStyle="#00e0ff";
+    ctx.shadowBlur=15;
+    ctx.shadowColor="#00e0ff";
+    ctx.fill();
+    p.x+=p.dx; p.y+=p.dy;
+    if(p.x<0||p.x>canvas.width) p.dx*=-1;
+    if(p.y<0||p.y>canvas.height) p.dy*=-1;
+  });
+  requestAnimationFrame(animateParticles);
+}
+animateParticles();
+window.onresize = ()=>{ canvas.width=window.innerWidth; canvas.height=window.innerHeight; };
+
+// ==== Scroll Reveal ====
+const reveals = document.querySelectorAll('.reveal');
+function revealOnScroll(){
+  const windowHeight = window.innerHeight;
+  reveals.forEach(el=>{
+    const elementTop = el.getBoundingClientRect().top;
+    if(elementTop < windowHeight*0.8){
+      el.classList.add('active');
+    }
+  });
+}
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
+</script>
+</body>
+</html>
